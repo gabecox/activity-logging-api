@@ -1,4 +1,4 @@
-## Demo activity tracking api
+## Demo activity logging api using typescript, express, sqlite
 
 start demo by running
 
