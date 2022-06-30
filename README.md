@@ -53,7 +53,7 @@ DELETE      /activity/:id       deletes activity by id
 # Sample response:
 
 ```
-/activity?before=2021-10-10T18:40&after=2020
+GET /activity?before=2021-10-10T18:40&after=2020
 
     ["appointment",{
         "totalElapsed":26596,
