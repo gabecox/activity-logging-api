@@ -3,7 +3,7 @@
 start demo by running
 
 ```
-npm run demo
+cd server && npm run demo
 ```
 
 # Routes:
