@@ -1,0 +1,6 @@
+node_modules
+dist
+migrations
+
+leapdev.db
+.DS_Store
