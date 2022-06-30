@@ -11,7 +11,7 @@
     "build": "tsc",
     "migrate": "mikro-orm migration:create",
     "seed": "mikro-orm seeder:run",
-    "demo": "npm install && tsc && rm leapdev.db && npm run scheme && npm run seed && npm run migrate && npm run start"
+    "demo": "npm install && tsc && npm run scheme && npm run seed && npm run migrate && npm run start"
   },
   "keywords": [],
   "author": "",
