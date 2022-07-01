@@ -6,6 +6,12 @@ start demo by running
 cd server && npm run demo
 ```
 
+or run in a docker container
+
+```
+cd server && npm run demo:docker
+```
+
 # Routes:
 
 ```
