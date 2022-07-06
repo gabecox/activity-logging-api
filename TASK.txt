@@ -1,6 +1,6 @@
-# LEAPDevInterview - Take Home Coding Test
+# Take Home Coding Test
 
-LEAP Dev is building an activity tracking solution for law firms such
+Build an activity tracking solution for law firms such
 that they can record the time spent performing different types of
 activities during the process of providing a legal service.
 
