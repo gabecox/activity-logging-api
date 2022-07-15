@@ -9,19 +9,20 @@ cd server && npm run demo
 or run in a docker container
 
 ```
-cd server && npm run demo:docker
+cd server && docker build -t gabecox/activity-logging-api . && docker run -p 4000:4000 gabecox/activity-logging-api
 ```
 
 # Routes:
 
 ```
 GET         /giveauth/:firmid   sets your authentication token to :firmid
+                                (not a very safe authentication method)
 
 GET         /activity/:id       finds a single activity by id
 GET         /activity           finds all activities for the authorized firmid
 GET query parameters:
-    - ?after{earliest record wanted}
-    - ?before{latest record wanted}
+    - ?after=(earliest record start time)
+    - ?before=(latest record end time)
 ```
 
 ```
@@ -93,11 +94,3 @@ GET /activity?before=2021-10-10T18:40&after=2020
     }]
 ]
 ```
-
-problems:
-
-    - bad datetime query is uncaught and breaks server - FIX: catch bad datetime query
-
-future development:
-
-    - extract query params to "withFilters" middleware

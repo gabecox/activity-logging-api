@@ -12,8 +12,7 @@
     "migrate": "mikro-orm migration:create",
     "seed": "mikro-orm seeder:run",
     "demo": "npm install && tsc && npm run scheme && npm run seed && npm run migrate && npm run start",
-    "setup": "tsc && npm run scheme && npm run migrate && npm run seed",
-    "demo:docker": "docker build -t gabecox/activity-logging-api:1.0.0 . && docker run -p 4000:4000 gabecox/activity-logging-api:1.0.0"
+    "setup": "tsc && npm run scheme && npm run migrate && npm run seed"
   },
   "keywords": [],
   "author": "",
